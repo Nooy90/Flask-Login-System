@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {% include 'auth/styles.html' %}
+</head>
+<body>
+    {% include 'auth/user-navigation.html' %}
+    <!-- Register Form -->
+
+    <div class="form-wrapper">
+        <form autocomplete="off" method="POST" action="/auth/reg_user" enctype="multipart/form-data">
+            <ul>
+                <li>{{form.username(placeholder='Username')}}</li>
+                <li>{{form.email(placeholder='Email')}}</li>
+                <li>{{form.password(placeholder="Password")}}</li>
+                <li>{{form.confirm_password(placeholder='Confirm Password')}}</li>
+                <li>{{form.role}}</li>
+                <li>{{form.profile_img}}</li>
+                <li>{{form.csrf_token}}</li>
+                <li>{{form.submit()}}</li>
+            </ul>
+        
+        </form>
+        {% if message == True %}
+            <h4>Oops! This email already exists. Please <a href="{{url_for('auth_bp.user_login')}}">Login</a></h4>
+        
+        {% elif message != None %}
+            {{message}}
+        {% endif %}
+    </div>
+</body>
+</html>
