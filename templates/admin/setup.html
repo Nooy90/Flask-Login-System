@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site.com - Setup</title>
+    {% include 'admin/styles.html' %}
+</head>
+<body>
+    {% include 'admin/navigation.html' %}
+
+    <!-- Admin Register Form -->
+    <div class="form-wrapper">
+        <form method="POST" autocomplete="off" action="/admin/register" enctype="multipart/form-data">
+            <ul class="admin-reg-list">
+                <li>{{form.email(placeholder='Email')}}</li>
+                <li>{{form.password(placeholder='Password')}}</li>
+                <li>{{form.confirm_password(placeholder='Confirm Password')}}</li>
+                <li>{{form.profile_img}}</li>
+                {{form.csrf_token}}
+                <li>{{form.submit()}}</li>
+                
+            </ul>
+        
+        </form>
+
+        {{message}}
+    
+</body>
+</html>
