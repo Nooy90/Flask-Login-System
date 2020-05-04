@@ -1,0 +1,176 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+
+ul li{
+    list-style-type: none;
+}
+
+/* Navigation */
+
+nav.navbar.navbar-dark.bg-dark h5 {
+    color: white;
+    font-family: inherit;
+    font-weight: 400;
+    position: relative;
+    top: 2px;
+    margin-right: 30px;
+}
+
+nav.navbar.navbar-dark.bg-dark {
+    padding: 30px;
+}
+
+/* Admin Register */
+
+.form-wrapper {
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.form-wrapper ul li input{
+    width: 300px;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input#admin_profile_img {
+    position: relative;
+    right: 10px;
+}
+
+.reg-success {
+    text-align: center;
+    margin: 100px;
+    font-family: inherit;
+}
+
+/* User Register */
+
+input#user_type-0, input#user_type-1 {
+    width: 13px;
+}
+
+/* Verify User Account */
+
+.verify-account {
+    text-align: center;
+}
+
+.verify-account h1 {
+    text-align: center;
+    position: relative;
+    top: 42px;
+    font-size: 24px;
+    font-family: inherit;
+}
+
+/* User */
+
+/* Wallet */
+
+.wallet-wrapper {
+    max-width: 800px;
+    border: 1px solid;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.wallet-top {
+    text-align: right;
+}
+
+.wallet-deposit {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.wallet-wrapper form {
+    position: relative;
+    top: 48px;
+}
+
+
+/* Wallet Transactions */
+
+.deposit-trans ul li {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.deposit-trans {
+    background: #F0F0F0;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.wallet-transactions h4 {
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+/* Create Gig */
+
+.create-gig-wrapper {
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.create-gig-wrapper h2 {
+    padding-bottom: 30px;
+}
+
+.all-gigs {
+    margin: 20px;
+}
+
+ul#gig_category input {
+    width: 15px;
+}
+
+ul.gig-item {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Chat box -> order page */
+
+/* Seller chat */
+
+.seller-order-chat-wrapper {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    border: 1px solid;
+    padding: 30px;
+    height: 800px;
+}
+
+ul.send-chat-message {
+    position: relative;
+    top: 382px;
+}
+
+ul.send-chat-message {
+    position: relative;
+    top: 335px;
+}
